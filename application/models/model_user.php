@@ -6,7 +6,11 @@
 			$query = $this->db->get_where('user', $data);
 			return $query;
 		}
-
+		public function insert_user($data)
+		{
+			$this->db->insert('user',$data);
+			return true;
+		}
 	}
 
 ?>

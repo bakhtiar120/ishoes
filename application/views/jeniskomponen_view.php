@@ -12,6 +12,7 @@
         <table>
             <thead>
                 <th>No</th>
+                <th>ID</th>
                 <th>Nama</th>
                 <th>Harga</th>
                 <th>Keterangan</th>
@@ -27,10 +28,14 @@ foreach($records as $value)
                 ?>
                 <tr>
                     <td><?= $no++;?></td>
+                    <td><?= $value->ID_Jenis_Komponen;?></td>
                     <td><?= $value->nama;?></td>
-                   <td><?= $value->harga;?></td>
-                   <td><?= $value->keterangan;?></td>
-      <td><a href="<?= site_url("jenis_komponen/edit")."?jeniskomponen=".$value->ID_Jenis_Komponen;?>">edit</a>|<a href="<?= site_url("jenis_komponen/delete")."?jenis_komponen=".$value->ID_Jenis_Komponen;?>">delete</a> </td>
+                    <td><?= $value->harga;?></td>
+                    <td><?= $value->keterangan;?></td>
+                    <td>
+                        <a href="<?= site_url("jenis_komponen/edit")."?jeniskomponen=".$value->ID_Jenis_Komponen;?>">edit</a>|
+                        <a href="<?= site_url("jenis_komponen/delete")."?jeniskomponen=".$value->ID_Jenis_Komponen;?>">delete</a>
+                    </td>
                 </tr>
                 <?php
 }

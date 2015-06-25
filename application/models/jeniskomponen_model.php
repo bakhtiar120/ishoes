@@ -37,8 +37,8 @@ class Jeniskomponen_model extends CI_Model {
    	return true;
 	}
 	function delete($id){
-   		$this->db->where('ID_Komponen',$id);
-   		$this->db->delete('komponen');
+   		$this->db->where('ID_Jenis_Komponen',$id);
+   		$this->db->delete('jenis_komponen');
 	}
   function tambah() {
      $query = $this->db->get('komponen');// mengambil semua data dari tabel data_barang

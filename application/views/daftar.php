@@ -7,16 +7,16 @@
     <title>GBU | Admin</title>
 </head>
 <body>
-<?php echo form_open("auth/cek_login"); ?>
+<?php echo form_open("daftar/register"); ?>
+		<p>NIK : <br>
+		<input type="text" name="nik">
+		</p>
 		<p>Username : <br>
 		<input type="text" name="username">
 		</p>
 		<p>Password : <br>
 		<input type="password" name="password"></p>
-		<p>
-			<button type="submit">Submit</button>
-			<a href="daftar">Daftar</a>
-		</p>
+		<p><button type="submit">Daftar</button></p>
 		<?php echo form_close(); ?>
 </body>
 </html>
